@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkadminpro=self.webpackChunkadminpro||[]).push([[256],{9256:function(e,r,n){n.r(r);n(2791);var s=n(184);r.default=function(){return(0,s.jsx)(s.Fragment,{children:(0,s.jsxs)("div",{id:"error-page",className:"text-center my-3",children:[(0,s.jsx)("h1",{children:"Oops!"}),(0,s.jsx)("p",{children:"Sorry, an unexpected error has occurred."}),(0,s.jsx)("p",{})]})})}}}]);
+//# sourceMappingURL=256.8106eaa6.chunk.js.map
