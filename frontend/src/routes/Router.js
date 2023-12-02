@@ -20,7 +20,7 @@ const ThemeRoutes = [
     path: "/",
     element: <FullLayout />,
     children: [
-     // { path: "/", element: <Navigate to="/starter" /> },
+      { path: "/", element: <Navigate to="/starter" /> },
       { path: "/starter", exact: true, element: <Starter /> },
       // {
       //   path: "/danh-sach-bang-quang-cao",
