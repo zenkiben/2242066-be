@@ -6,6 +6,11 @@ const navigation = [
     title: "Dashboard",
     href: "/starter",
     icon: "bi bi-speedometer2",
+  },
+  {
+    title: "Spaces",
+    href: "/spaces",
+    icon: "bi bi-speedometer2",
   }
   // {
   //   title: "Alert",

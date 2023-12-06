@@ -7,7 +7,7 @@ const FullLayout = lazy(() => import("../layouts/FullLayout.js"));
 /***** Pages ****/
 
 const Starter = lazy(() => import("../views/Starter.js"));
-// const Advertisement = lazy(() => import("../pages/advertisement/index"));
+const Spaces = lazy(() => import("../pages/spaces/index"));
 // const ListUser = lazy(() => import('../pages/users/index.jsx'));
 const NotFound = lazy(() => import("../pages/NotFound/NotFound"));
 // const AddEditAdvertisement = lazy(() =>
@@ -22,11 +22,11 @@ const ThemeRoutes = [
     children: [
       { path: "/", element: <Navigate to="/starter" /> },
       { path: "/starter", exact: true, element: <Starter /> },
-      // {
-      //   path: "/danh-sach-bang-quang-cao",
-      //   exact: true,
-      //   element: <Advertisement />,
-      // },
+      {
+         path: "/spaces",
+         exact: true,
+         element: <Spaces />,
+       },
       // {
       //   path: "/them-bang-quang-cao",
       //   exact: true,
