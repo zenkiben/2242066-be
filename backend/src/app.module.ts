@@ -18,8 +18,6 @@ import { SurfacesModule } from './Surfaces/Surfaces.module';
       // password: '123456789',
       database: 'ads',
       entities: [ReportsEntity, SpacesEntity, SurfacesEntity],
-      synchronize: true,
-      migrationsRun: true,
     }),
     ReportsModule,
     SpacesModule,

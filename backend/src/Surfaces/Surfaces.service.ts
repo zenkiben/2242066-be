@@ -9,4 +9,7 @@ export class SurfacesService {
     @InjectRepository(SurfacesEntity)
     private readonly SurfacesRepository: Repository<SurfacesEntity>,
   ) {}
+  async findAll() {
+    return await this.SurfacesRepository.find();
+  }
 }

@@ -9,4 +9,7 @@ export class SpacesService {
     @InjectRepository(SpacesEntity)
     private readonly SpacesRepository: Repository<SpacesEntity>,
   ) {}
+  async findAll() {
+    return await this.SpacesRepository.find();
+  }
 }
