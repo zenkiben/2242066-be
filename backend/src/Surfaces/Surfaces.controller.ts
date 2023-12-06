@@ -1,4 +1,4 @@
-import { Controller, Get, HttpCode, HttpStatus } from '@nestjs/common';
+import { Controller, Get, HttpCode, HttpStatus, Param } from '@nestjs/common';
 import { SurfacesService } from './Surfaces.service';
 import { CustomException } from 'src/exception/CustomException';
 
@@ -10,6 +10,15 @@ export class SurfacesController {
   @Get()
   async findAll() {
     const Surfaces = await this.service.findAll();
+    if (!Surfaces) {
+      throw new CustomException('Surfaces not found', HttpStatus.NOT_FOUND);
+    }
+    return { message: 'success', data: Surfaces };
+  }
+  @HttpCode(200)
+  @Get('/:id')
+  async findById(@Param('id') id: number) {
+    const Surfaces = await this.service.findById(id);
     if (!Surfaces) {
       throw new CustomException('Surfaces not found', HttpStatus.NOT_FOUND);
     }

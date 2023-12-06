@@ -12,4 +12,11 @@ export class SurfacesService {
   async findAll() {
     return await this.SurfacesRepository.find();
   }
+  async findById(id: number) {
+    return await this.SurfacesRepository.findOne({
+      where: {
+        space: id,
+      },
+    });
+  }
 }
